@@ -43,12 +43,8 @@ public class LutadorController {
     @PostMapping("/golpe")
     private ResponseEntity golpe(@RequestBody Golpe golpe){
         Optional<Lutador> lista = repository.findById(golpe.getIdLutadorBate());
-        lista.
+        //lista.
+        //Não consegui pegar os dados dos lutadores :/
         return ResponseEntity.ok().build();
-    }
-
-    @PostMapping("/{id}/concentrar")
-    private ResponseEntity concentrar(){
-
     }
 }
